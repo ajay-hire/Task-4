@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Post</title>
+</head>
+<body>
+    <h1>Add New Post</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+
+    <br>
+    <a href="/">Back to Blog</a>
+</body>
+</html>
